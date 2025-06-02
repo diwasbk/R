@@ -37,3 +37,39 @@ class(d1) # returns the class of d1
 # vector: collection of similar data types
 v1 = c(8, 9, 6) # creates a numeric vector v1
 print(v1)
+
+# Operators in R
+# 1. Arithmetic Operator: + - * / %% %/% ^
+# 2. Relational Operator: < > == <= >= !=
+# 3. Logical Operator: & | ! && ||
+# 4. Assignment Operator: = <- -> <<- ->>
+
+# 1. Arithmetic Operator
+a = 10 # assigns 10 to a
+b = 20 # assigns 20 to b
+print(a+b) # addition
+print(a-b) # subtraction
+print(a*b) # multiplication
+print(a/b) # division
+print(a%%b) # modulus (remainder)
+print(a%/%b) # integer division (quotient)
+print(a^b) # exponentiation (a raised to the power b)
+
+# 2. Relational Operator
+r1 = 20 # assigns 20 to r1
+r2 = 10 # assigns 10 to r2
+print(r1<r2) # less than
+print(r1>r2) # greater than
+print(r1==r2) # equal to
+print(r1<=r2) # less than or equal to
+print(r2>=r1) # greater than or equal to
+print(r1!=r2) # not equal to
+# same operations can be done with vectors
+
+# 3. Logical Operator
+# Create a heterogeneous vector (numeric, logical, complex)
+p <- c(3.5, TRUE, 2+5i)  # All elements are coerced to complex type
+
+# Display the vector
+print("Vector p:")
+print(p)
