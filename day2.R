@@ -78,3 +78,35 @@ paste("Diwas", "Bishwokarma", "IT", "Student", sep="_")  # joins strings using u
 paste0("Diwas", "Bishwokarma", "Data Scientist")  # joins strings without separator
 
 # paste0() is faster than paste()
+
+
+# function
+# func_name = function(arg1, arg2..){}
+my_func = function(a, b){
+  print(paste("This is my new function with values", a, "and", b, "and their sum is:", a + b))
+}
+# function call
+my_func(20, 40)
+my_func(30, 10)
+
+
+# built-in functions
+x = 5.6
+print(ceiling(x))  # rounds x up to nearest integer
+print(floor(x))  # rounds x down to nearest integer
+
+y = -29
+print(abs(y))  # returns absolute value of y
+print(sqrt(9))  # returns square root of 9
+
+p = c(1.5, 5.6, 8.6)
+print(trunc(p))  # truncates decimal part (keeps integer part)
+
+print(sin(x))  # returns sine of x (in radians)
+print(log(x))  # returns natural logarithm of x
+print(exp(x))  # returns exponential of x (e^x)
+
+a = "DiwasBishwokarma"
+substr(a, 2, 3)  # extracts substring from 2nd to 3rd character
+toupper(a)  # converts to uppercase
+tolower(a)  # converts to lowercase
