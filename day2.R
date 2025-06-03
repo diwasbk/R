@@ -110,3 +110,19 @@ a = "DiwasBishwokarma"
 substr(a, 2, 3)  # extracts substring from 2nd to 3rd character
 toupper(a)  # converts to uppercase
 tolower(a)  # converts to lowercase
+
+# pattern search
+s1 = c("abc", "bcdef", "abcfg", "ghiabc", "brfhg", "asdhh", "brabc", "asop")
+print(grep("abc", s1))  # returns indices of elements that contain "abc"
+
+v1 = c(0:5)
+s = sum(v1)  # calculates sum of elements in v1
+print(s)
+
+v2 = c(0:5, 40)
+s2 = sum(v2)  # calculates sum of elements in v2
+print(s2)
+
+v3 = c(4:20, 32, 90, 40)
+print(max(v3))  # finds the maximum value in v3
+print(min(v3))  # finds the minimum value in v3
