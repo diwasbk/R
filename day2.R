@@ -68,3 +68,13 @@ for(q in p){
   }
   print(q)  # prints q except when q is 5
 }
+
+# user input
+name = readline(prompt = "Enter your name: ")  # takes user input for name
+age = readline(prompt = "Enter your age: ")  # takes user input for age
+print(paste("Hello my name is ", name, "and I am ", age, "years old."))  # displays input message
+
+paste("Diwas", "Bishwokarma", "IT", "Student", sep="_")  # joins strings using underscore
+paste0("Diwas", "Bishwokarma", "Data Scientist")  # joins strings without separator
+
+# paste0() is faster than paste()
