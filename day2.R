@@ -28,3 +28,43 @@ if(marks>=90){  # grade A+ if marks is 90 or above
 }else{
   print("Fail")  # if marks is below 60
 }
+
+# Switch Case Statement in R
+# switch syntax: switch(expression, case1, case2....)
+y = 2
+x = switch(y, "1"="Diwas", "2"="Ram", "3"="Shyam")  # returns "Ram" since y = 2
+print(x)
+
+# for loop in R
+for(y in 1:20){  # loops from 1 to 20
+  print(paste(y, ". R Programming"))  # prints loop index with text
+}
+
+v1 = c("Diwas", "Ram", "Shyam", "Hari", "Sita", "Gita")
+for(i in v1){  # iterates through each element in vector v1
+  print(i)  # prints each name
+}
+
+# while loop
+v = c("Diwass", "Rams", "Shyams", "Haris", "Sitas", "Gitas")
+x = 1
+while(x < 3){  # loop runs while x is less than 3
+  print(v)  # prints all elements of vector v
+  x = x + 1  # increments x
+}
+
+# repeat loop
+x = 1:30
+repeat{  # infinite loop; will repeat forever unless a break is added
+  print(x)  # prints vector x
+  # Missing break condition (e.g., use if(...) break to stop)
+}
+
+# next and break statement
+p = 1:10
+for(q in p){
+  if(q == 5){
+    next  # skips the iteration when q is 5
+  }
+  print(q)  # prints q except when q is 5
+}
