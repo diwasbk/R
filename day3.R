@@ -86,3 +86,20 @@ ls = list(5:10)                       # List with a sequence from 5 to 10
 vc = unlist(ls)                      # Converting list to vector
 class(vc)                            # Checking class
 typeof(vc)                           # Checking type
+
+
+# 3. Arrays
+# An array is a multi-dimensional generalization of matrices.
+# Arrays are data objects which allow us to store data in more than two dimensions.
+# array(data, dim): Create an array with given data and dimensions
+v1 = c(1, 2, 5)                        # Vector
+v2 = c(10, 20, 30, 40, 50)            # Another vector
+v3 = array(c(v1, v2), dim = c(3, 3, 2))  # Creating a 3x3x2 array
+print(v3)                             # Printing the array
+
+
+# 4. Matrices
+# A matrix is a two-dimensional collection of elements of the same type.
+# matrix(data, nrow, ncol, byrow, dimnames): Create a matrix
+mat = matrix(c(2, 3, 4, 5, 6, 7), nrow = 2, ncol = 3, byrow = TRUE)  # 2 rows, 3 columns filled by row
+print(mat)                                                          # Printing the matrix
