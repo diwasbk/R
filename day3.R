@@ -64,3 +64,25 @@ x = 5:10                                # Sequence from 5 to 10
 any(x > 5)                              # Checks if any element is greater than 5
 all(x > 2)                              # Checks if all elements are greater than 2
 
+
+# 2. Lists
+# A list can contain elements of different types and lengths.
+v1 = c(1, 2, 3, 4, 5)                # Numeric vector
+v2 = c("Apple", "MAngo", "Banana", "Orange", "Gauva")  # Character vector
+v3 = c(TRUE, FALSE, TRUE, TRUE, FALSE)                  # Logical vector
+list1 = c(v1, v2, v3)                # This creates a vector by combining elements, not a list
+print(list1)                         # Printing the result
+
+# Note: The number of elements should be the same in all vectors i.e., v1, v2, v3
+
+# Naming a list
+lst = list(c("Monitor", "Keyboard", "CPU"), c(500, 100, 800), c("OLED", "Gaming", "Processing Unit"))  # Creating a list
+names(lst) = c("Device", "Price", "Types")   # Naming list elements
+lst                                   # Printing the list
+lst["Price"]                          # Accessing the "Price" component
+
+# unlist(): Converts the list to a vector
+ls = list(5:10)                       # List with a sequence from 5 to 10
+vc = unlist(ls)                      # Converting list to vector
+class(vc)                            # Checking class
+typeof(vc)                           # Checking type
