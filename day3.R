@@ -47,3 +47,20 @@ l1 + l2                              # Element-wise addition
 l1 - l2                              # Element-wise subtraction
 l1 * l2                              # Element-wise multiplication
 l1 / l2                              # Element-wise division
+
+# R Vector Functions
+# rep(): Repetition function to repeat elements in a vector
+rep(c(2, 3, 4), times = 3)           # Repeat the whole vector 3 times
+rep(c(1, 2, 3), each = 2)            # Repeat each element 2 times
+rep(c(0, 8), times = c(3, 4))        # 0 repeated 3 times, 8 repeated 4 times
+rep(1:4, length.out = 9)             # Repeat sequence until length reaches 9
+
+# seq(): Sequence generation
+seq(from = 3.5, to = 1.5, by = -0.5)               # Sequence decreasing by 0.5
+seq(from = -2.7, to = 1.5, length.out = 9)         # Generate 9 equally spaced values
+
+# any() and all(): Logical checks
+x = 5:10                                # Sequence from 5 to 10
+any(x > 5)                              # Checks if any element is greater than 5
+all(x > 2)                              # Checks if all elements are greater than 2
+
