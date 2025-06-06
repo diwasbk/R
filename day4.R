@@ -48,3 +48,11 @@ y = c("Kathmandu", "Butwal", "Dang", "Gulmi", "Pokhara", "Biratnagar")  # Addres
 emp_data = cbind(emp_data, emp_address = y)  # Append new column to emp_data
 emp_data
 
+
+# 4. Deleting rows and columns
+
+emp_data = emp_data[-2, ]         # Delete 2nd row
+print(emp_data)
+
+emp_data$emp_address = NULL       # Delete emp_address column
+print(emp_data)
