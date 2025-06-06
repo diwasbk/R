@@ -15,3 +15,23 @@ emp_data = data.frame(
 
 print(emp_data)            # Print the full data frame
 str(emp_data)              # Show structure: types of each column (int, chr, num, etc.)
+
+
+# 2. Extracting specific data
+
+# Creating a new data frame with only name and salary columns
+f1 = data.frame(emp_data$emp_name, emp_data$emp_salary)
+print(f1)
+
+# Extracting the 3rd row only
+f2 = emp_data[3,]
+print(f2)
+
+# Extracting rows from 3rd to 5th
+f3 = emp_data[3:5, ]
+print(f3)
+
+# Extracting the element in 3rd row and 2nd column (i.e., emp_name of 3rd employee)
+f4 = emp_data[3, 2]
+print(f4)
+
