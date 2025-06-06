@@ -35,3 +35,16 @@ print(f3)
 f4 = emp_data[3, 2]
 print(f4)
 
+
+# 3. Adding new data
+
+# Adding a new row using rbind()
+x = list(6, "DIWAS", 8000)         # New employee data
+emp_data = rbind(emp_data, x)      # Append new row to emp_data
+emp_data                          # Show updated data frame
+
+# Adding a new column using cbind()
+y = c("Kathmandu", "Butwal", "Dang", "Gulmi", "Pokhara", "Biratnagar")  # Address column (6 entries for 6 rows)
+emp_data = cbind(emp_data, emp_address = y)  # Append new column to emp_data
+emp_data
+
