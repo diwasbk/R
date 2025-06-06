@@ -56,3 +56,20 @@ print(emp_data)
 
 emp_data$emp_address = NULL       # Delete emp_address column
 print(emp_data)
+
+
+# 5. Summary statistics
+
+summary(emp_data)                 # Gives min, max, mean, etc. for numeric columns
+
+
+# 6. Factors in R
+
+# Creating a character vector
+colors = c("red", "blue", "red", "green", "blue", "red")
+
+# Converting to factor: useful for categorical data
+color_factor = factor(colors)
+
+# Printing the factor
+print(color_factor)
