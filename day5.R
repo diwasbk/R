@@ -52,3 +52,40 @@ View(best_attendance)
 # Deleting a column from the dataframe
 a1 = subset(students, select = -total_spent_hr)
 View(a1)
+
+
+# Data Manipulation using dplyr package
+install.packages("dplyr")   # Install the dplyr package
+library("dplyr")            # Load the dplyr package
+
+# Read the data again
+our_students = read.csv("student_habits_performance.csv")
+View(our_students)
+
+# Select specific columns
+d1 = select(our_students, student_id, age, gender)
+View(d1)
+
+# Select all columns except "age"
+d2 = select(our_students, -age)
+View(d2)
+
+# Select a range of columns
+d3 = select(our_students, age:netflix_hours)
+View(d3)
+
+# Select columns that start with "st"
+d4 = select(our_students, starts_with("st"))
+View(d4)
+
+# Select columns that end with "rs"
+d5 = select(our_students, ends_with("rs"))
+View(d5)
+
+# Select columns that contain "art"
+d6 = select(our_students, contains("art"))
+View(d6)
+
+# Filter male students who are 18 or younger
+childrens = filter(our_students, age <= 18, gender == "Male")
+View(childrens)
