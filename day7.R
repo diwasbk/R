@@ -93,3 +93,12 @@ ggplot(mtcars, aes(x = wt, y = mpg)) +
 # Colored scatter plot based on number of gears
 ggplot(mtcars, aes(x = drat, y = mpg)) + 
   geom_point(aes(color = factor(gear)))
+
+
+# 6. BOX / WHISKER PLOT
+# A boxplot shows the distribution of a numeric variable by displaying its five-number summary: 
+# minimum, lower quartile (Q1), median (Q2), upper quartile (Q3), and maximum.
+
+boxplot(mtcars$hp, xlab = "X", ylab = "Y", main = "Whisker/Box Plot", 
+        horizontal = TRUE, notch = TRUE, col = "yellow", border = "red")
+
