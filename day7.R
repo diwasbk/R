@@ -58,3 +58,18 @@ hist(v, xlab = "Weight", ylab = "Frequency",
 hist(v, xlab = "Weight", ylab = "Frequency", 
      main = "Distribution of Weight", col = "yellow", border = "red", 
      xlim = c(0, 40), ylim = c(0, 3))
+
+
+# 4. LINE GRAPH
+# A line graph connects data points with lines to show trends over time.
+
+v <- c(18, 22, 28, 7, 31, 100)
+plot(v, xlab = "Month", ylab = "Temperature", 
+     type = "o", col = "blue")  # type = "o" shows points and lines
+
+# Adding multiple lines to the same graph
+w <- c(34, 67, 89, 30, 45, 65)
+x <- c(45, 56, 34, 20, 35, 50)
+lines(w, type = "o", col = "red")
+lines(x, type = "o", col = "green")
+
