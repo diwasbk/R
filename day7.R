@@ -73,3 +73,23 @@ x <- c(45, 56, 34, 20, 35, 50)
 lines(w, type = "o", col = "red")
 lines(x, type = "o", col = "green")
 
+
+# 5. SCATTER PLOT
+# A scatter plot is used to observe relationships between two numeric variables.
+
+# Load mtcars dataset and select columns
+library(dplyr)
+d1 <- select(mtcars, wt, mpg)
+
+# Scatter plot using base R
+plot(x = d1$wt, y = d1$mpg, xlab = "Weight", ylab = "Mileage", 
+     xlim = c(2.5, 5), ylim = c(15, 30), main = "Weight vs Mileage")
+
+# Scatter plot using ggplot2
+library(ggplot2)
+ggplot(mtcars, aes(x = wt, y = mpg)) + 
+  geom_point()
+
+# Colored scatter plot based on number of gears
+ggplot(mtcars, aes(x = drat, y = mpg)) + 
+  geom_point(aes(color = factor(gear)))
