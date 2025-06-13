@@ -45,3 +45,16 @@ barplot(val, names.arg = months, xlab = "Months", ylab = "Revenue",
         main = "Total Revenue", col = rainbow(length(regions)))
 legend("topright", regions, cex = 0.8, fill = rainbow(length(regions)))
 
+
+# 3. HISTOGRAM
+# A histogram displays the frequency distribution of a continuous numeric variable.
+# Unlike a bar chart, histograms show data distribution over intervals.
+
+v <- c(12, 24, 16, 38, 21, 13, 55, 17, 39, 10, 60, 59, 58)
+hist(v, xlab = "Weight", ylab = "Frequency", 
+     main = "Distribution of Weight", col = "green", border = "red")
+
+# Histogram with specified axis limits
+hist(v, xlab = "Weight", ylab = "Frequency", 
+     main = "Distribution of Weight", col = "yellow", border = "red", 
+     xlim = c(0, 40), ylim = c(0, 3))
